@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                    sh './PES1UG22AM115-1'
+                    // Intentional error
+                    sh './PES1UG22AM115-1_hello'
             }
         }
         stage('Deploy') {
